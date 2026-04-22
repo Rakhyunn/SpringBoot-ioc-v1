@@ -11,6 +11,7 @@ public class ApplicationContext {
 
     public ApplicationContext() {
         beans.put("testPostService", new TestPostService(new TestPostRepository()));
+        beans.put("testPostRepository", new TestPostRepository());
     }
 
     public <T> T genBean(String beanName) {
